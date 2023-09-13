@@ -22,3 +22,8 @@ const useStyles = makeStyles((theme) => ({
     margin: '10px',
   },
 }));
+
+
+const VideoPlayer = () => {
+  const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } = useContext(SocketContext);
+  const classes = useStyles();
